@@ -3,7 +3,7 @@
     margin: 0;
     font-family: sans-serif;
 }
-body{
+html,body{
     overflow-x: hidden;
 }
 
@@ -48,16 +48,18 @@ body{
     border-bottom: 1px solid #db0448;
 }
 .right img{
-    width: 20px;
+    width: 25px;
 }
+.heade .mobile-icon{display: none;}
+.header .nav-links .row2-mobile{display: none;}
+
 
 /* Header section End */
 
 /* Slider section start */
 .slider{
-    width: 98%;
-    height: 800px;
-    margin-left: 20px;
+    width: 100%;
+    height: 600px;
     background-image: url("../img/banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,30 +72,16 @@ body{
     padding: 20px;
     border-radius: 5px;
     position: absolute;
-    top: 90%;
+    top: 78%;
     left: 10%;
 }
 /* Slider section End */
 
 /* Items section Start */
 
-.row3{
-    display: flex;
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-top: 100px;
-}
-.row3 img{
-    width: 200px;
-}
-.row3 .col{
-    width: 29%;
-    margin: 20px;
-    border: 1px solid lightgray;
-    border-radius: 15px;
-    padding: 15px;
-}
+.row3{display: grid;grid-template-columns: repeat(auto-fill, minmax(400px, 1fr )); gap: 30px; width: 80%; text-align: center; margin: auto; margin-top: 100px;}
+.row3 img{width: 200px;}
+.row3 .col{border: 1px solid lightgray; border-radius: 15px; padding: 15px;}
 
 .row3 h1{
     font-size: 18px;
@@ -109,9 +97,8 @@ body{
 
 /* Start of slider2 */
 .slider2{
-    width: 96%;
+    width: 100%;
     height: 800px;
-    margin-left: 25px;
     margin-top: 80px;
     text-align: center;
     background-image: url("../img/banner2.webp");
@@ -133,20 +120,10 @@ body{
 /* End of Slider2 */
 
 /* Start of Row 4 */
-.row4{
-    display: flex;
-    width: 90%;
-    text-align: left;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: -290px !important;
+.row4{display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; width: 80%; text-align: left; margin: auto; margin-top: -280px !important;
 }
 .row4 img{
-    width: 100%;
-}
-.row4 .col{
-    width: 30%;
-    
+    width: 300px;
 }
 .row4 h2{
     padding: 20px 0px;
@@ -164,7 +141,7 @@ body{
 .features{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    padding-top: 120px;
     margin-bottom: 30px;
 }
 .anchor-features{
@@ -176,7 +153,7 @@ body{
     text-decoration: none;
     font-size: 20px;
     color: rgb(31, 31, 31);
-    margin-left: 100px;    
+    margin-left: 150px;   
    
 }
 
@@ -184,7 +161,9 @@ body{
 
 /* Start of Most Popular Features */
 .most-popular{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
     width: 80%;
     margin: auto;
     margin-top: 30px;
@@ -192,11 +171,6 @@ body{
 
 .most-popular img{
     width: 200px;
-}
-.most-popular .col{
-    width: 29%;
-    margin: 20px;
-    padding: 15px;
 }
 .most-popular h5{
     padding: 15px;
@@ -209,17 +183,20 @@ body{
 /* Start of Section4 */
 .section4{
     display: flex;
-    width: 94%;
+    width: 96%;
     justify-content: space-around;
     margin: auto;
     margin-top: 100px;
 }
 .section4 .col1{
     width: 38%;
-    height: 750px;
+    height: 873px;
+    padding-left: 30px;
     text-align: center;
     background-image: url("../img/africa-home-block-1-t.webp");
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 .section4 .col1 h2{
     color: white;
@@ -238,13 +215,15 @@ body{
 .section4 .col2 .img1{
     background-image: url("../img/africa-home-block-2-d.webp");
     background-size:cover;
-    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
     
 }
 .section4 .col2 .img2{
     background-image: url("../img/africa-home-block-3-d.webp");
     background-size: cover;
-    margin-top: 15px;
+    background-repeat: no-repeat;
+    /* margin-top: -60px; */
 }
 /* End of Section4 */
 
@@ -283,24 +262,21 @@ body{
 
 /* start of section 7 */
 .section7{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 35px;
     width: 80%;
-    margin-top: 90px;
-    margin-left: 350px;
-}
-.section7 .col1{
-    padding: 50px;
+    margin: auto;
+    margin-top: 90px;;
 }
 .section7 .col1 img{
     width: 100px;
 }
 .section7 .col1 p{
-    text-align: center;
-    padding-top: 20px;
+    margin-left: 10px;
 }
 .section7 .col1 a{
     text-decoration: none;
-    text-align: center;
     color: gray;
 }
 /* End of section7 */
@@ -312,9 +288,11 @@ body{
     width: 100%
 }
 .footer-section1{
-    display: flex;
-    width: 95%;
-    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin: auto;
+    margin-left: 20px;
     padding-bottom: 40px;
     
 }
@@ -323,7 +301,7 @@ body{
 }
 .footer-section1 a{
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 12px;
     color: #6B6B6B;
 }
@@ -333,10 +311,6 @@ body{
 .footer-section1 li{
     color: #6B6B6B;
     font-size: 12px;
-}
-.footer-section1 .col1{
-    width: 12%;
-    margin: 30px;
 }
 .footer-section1 h3{
     padding: 10px 0px;
@@ -365,9 +339,8 @@ body{
 
 /* Start of TV Slider section */
 .tv-slider{
-    width: 98%;
+    width: 100%;
     height: 550px;
-    margin-left: 20px;
     background-image: url("../img/africa-tvaudiovideo-hero-2-d.jpg");
     background-size: cover;
 }
@@ -393,8 +366,11 @@ body{
 /* Speakers Section Start */
 .speakers-section{
     width: 90%;
-    display: flex;
-    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: auto;
+    /* margin-left: 100px; */
     margin-top: 80px;
 }
 .speakers-section img{
@@ -402,10 +378,10 @@ body{
 }
 .speakers-section .col1{
     text-align: center;
-    width: 20%;
+    /* width: 20%; */
     border: 1px solid lightgray;
     border-radius: 10px;
-    margin: 20px;
+    /* margin: auto; */
     padding: 20px;
 
 }
@@ -418,8 +394,11 @@ body{
 }
 .patners-section2{
     width: 90%;
-    display: flex;
-    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin: auto;
+    /* margin-left: 150px; */
 }
 .patners-section2 .img{
     width: 150px;
@@ -427,7 +406,7 @@ body{
 .patners-section2 .col1{
     text-align: center;
     margin: 30px;
-    width: 12%;
+    
 }
 .patners-section2 .col1 a{
     text-decoration: none;
@@ -447,9 +426,8 @@ body{
 
 /* Start of LG Slider */
 .LG-slider{
-    width: 98%;
+    width: 100%;
     height: 700px;
-    margin-left: 15px;
     background-image: url("../img/africa-tvaudiovideo-hero-1-d.jpg");
     background-size: cover;
     
@@ -465,9 +443,9 @@ body{
     left: 75%;
 }
 .LG-slider1{
-    width: 98%;
+    width: 100%;
     height: 700px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     background-image: url("../img/africa-tvaudiovideo-pdp-2-d.jpg");
     background-size: cover;
     
@@ -491,9 +469,9 @@ body{
 }
 
 .LG-slider2{
-    width: 98%;
+    width: 100%;
     height: 700px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     background-image: url("../img/africa-tvaudiovideo-pdp-3-d.jpg");
     background-size: cover;
     
@@ -582,9 +560,8 @@ body{
 
 /* Start of Home Appliances Slider */
 .home-slider{
-    width: 98%;
+    width: 100%;
     height: 500px;
-    margin-left: 15px;
     margin-top: 40px;
     background-image: url("../img/africa-homeappliances-hero-1-d.jpg");
     background-size: cover;
@@ -625,8 +602,10 @@ body{
 
 .home-col{
     width: 90%;
-    display: flex;
-    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: auto;
     margin-top: 80px;
 }
 .home-col img{
@@ -634,10 +613,8 @@ body{
 }
 .home-col .col1{
     text-align: center;
-    width: 20%;
     border: 1px solid lightgray;
     border-radius: 10px;
-    margin: 20px;
     padding: 20px;
 
 }
@@ -645,9 +622,8 @@ body{
 
 /* Start of Home appliance Hero */
 .home-appliance-hero{
-    width: 98%;
+    width: 100%;
     height: 850px;
-    margin-left: 15px;
     background-image: url("../img/africa-homeappliances-supercategory.jpg");
     background-size: cover;
 }
@@ -680,9 +656,8 @@ body{
 
 /* Start of Home appliance Hero1 */
 .home-appliance-hero1{
-    width: 98%;
+    width: 100%;
     height: 850px;
-    margin-left: 15px;
     margin-bottom: 150px;
     background-image: url("../img/africa-homeappliances-supercategory-6\(1\).jpg");
     background-size: cover;
@@ -708,4 +683,299 @@ body{
 }
 /* End of Home appliance Hero1 */
 
+/* CSS FOR MOBILE VERSION */
 
+@media (max-width: 1050px) {
+    .header .nav-links{width: 90%}
+    .header a{font-size: 12px;}
+    .section7{display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 35px; width: 70%; margin: auto; margin-top: 90px;}
+    .section4{display: flex; width: 99%; justify-content: space-around; margin: auto; margin-top: 100px;}
+    .features a{font-size: 14px; margin-left: 80px;}
+    .slider a{ position: absolute; top: 75%; left: 10%;} 
+    
+}
+@media (max-width: 800px) {
+    .header .lg-logo{width: 20% ; text-align: center;}
+    .header .nav-links{width: 80% ;}
+    .header .nav-links .row2{display: none;}
+    .header .nav-links .row2-mobile img{width: 20px;}
+    .header .nav-links .row2-mobile a{font-weight: 600;}
+    .header .nav-links .row2-mobile{display: flex; justify-content: space-between; padding-top: 5px;}
+    .slider{width: 100%;  background-image: url("../img/banner.webp");background-repeat: no-repeat; background-size: contain; height: 400px;}
+    .slider a{ position: absolute; top: 65%; left: 10%;}  
+    .slider2 a{text-decoration: none; font-size: 12px; background-color: #db0448; padding: 15px; position: relative; top: 15%;}
+    .row4{display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 30px; width: 50%; text-align: left; margin: auto; margin-top: -500px !important;
+    }
+    .row4 h2{font-size: 12px; }
+    .features a{font-size: 12px; margin-left: 50px;}
+    .most-popular h5{font-size: 12px;}
+    .most-popular{display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; width: 100%;
+    margin: auto; margin-top: 30px;}
+    .section4 .col1{width: 38%; height: 438px; background-image: url("../img/africa-home-block-1-t.webp"); background-size: cover; background-repeat: no-repeat;}
+    .section4 .col2{ width: 54%;}
+    .section4 .col2 .img1{ background-image: url("../img/africa-home-block-2-d.webp"); background-size:contain; background-repeat: no-repeat;}
+    .section4 .col2 .img2{ background-image: url("../img/africa-home-block-3-d.webp"); background-size: contain; background-repeat: no-repeat; margin-top: -150px;}
+    .section5{margin-top: -200px;}
+    .section6 p{margin-top: -50px; font-size: 12px;}
+    .section7{display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 35px;
+    width: 80%; margin: auto; margin-top: 90px;;}
+}
+@media (max-width: 425px){
+    .header{border-bottom: 1px solid lightgrey; height: 55px;}
+    .header .lg-logo{width: 20% ; text-align: center;}
+    .header .lg-logo img{width: 10px;}
+    .header .nav-links .row2-mobile img{width: 10px;}
+    .header .nav-links .row1{display: none;}
+    .header .nav-links .row2-mobile a{font-size: 8px;}
+    .header .nav-links .row2-mobile{display: flex; padding-left: 20px;}
+    .slider a{
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+        background-color: #db0448;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 38%;
+        left: 10%;
+    }
+    .row4{display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; width: 80%; margin-left: 100px; text-align: left; 
+    }
+    .row4 img{width: 200px;}
+    .row4 h2{
+        padding: 10px 0px;
+    }
+    .row4 a{
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(66, 66, 66)
+    
+    }
+    .row3{display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr )); gap: 30px; width: 80%; text-align: center; margin: auto; margin-top: -150px;}
+    .row3 img{width: 200px;}
+    .row3 .col{border: 1px solid lightgray; border-radius: 15px; padding: 10px;}
+
+    .row3 h1{
+    font-size: 10px;
+    padding: 20px;
+}
+
+.row3 p{
+    padding: 8px;
+    color: grey;
+}
+.slider2{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    background-image: url("../img/banner2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.slider2 a{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    background-color: #db0448;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 5%;
+}
+    .features a{font-size: 8px; margin-left:2px}
+    .most-popular h5{font-size: 10px;}
+    .most-popular{display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 30px; width: 80%;
+     margin-left: 100px; margin-top: 30px;}
+
+     .section4 .col1{width: 38%; height: 438px; background-image: url("../img/africa-home-block-1-t.webp"); background-size: contain; background-repeat: no-repeat;}
+    .section4 .col2{ width: 54%;}
+    .section4 .col2 .img1{ background-image: url("../img/africa-home-block-2-d.webp"); background-size:contain; background-repeat: no-repeat;}
+    .section4 .col2 .img2{ background-image: url("../img/africa-home-block-3-d.webp"); background-size: contain; background-repeat: no-repeat; margin-top: -250px;}
+    .section4  h2{font-size: 14px;}
+    .section5 .col1 img{
+        width: 100px;
+    }
+    .section5 a{
+        font-size: 14px;
+    }
+    .section5{
+        margin-top: -300px;
+        margin-left: 50px;
+    }
+    .section7 .col1 img{
+        width: 50px;
+    }
+    .section7 .col1 p{
+        margin-left: -3px;
+    }
+    
+
+}
+
+/* MEDIA QUERY FOR TV/AUDIO/VIDEO */
+@media (max-width: 1050px){
+    .tv-slider{background-image: url("../img/africa-tvaudiovideo-hero-2-d.jpg"); background-size: contain; background-repeat: no-repeat;}
+    .tv-slider h1{font-size: 30px; position: relative; top: 30%; left: 58%;}
+    .tv-slider a{padding: 10px; border-radius: 8px; position: relative; top: 35%; left: 58%;}
+    .LG-slider{background-image: url("../img/africa-tvaudiovideo-hero-1-d.jpg"); background-size: contain; height: 500px; background-repeat: no-repeat;}
+    .LG-slider a{position: relative; left: 60%;}
+    .LG-slider1 h2{ position: relative; left: 65%;}
+    .LG-slider1 a{ position: relative; left: 65%;}
+    .LG-slider1{
+        width: 100%;
+        height: 700px;
+        margin-top: -115px;
+        background-image: url("../img/africa-tvaudiovideo-pdp-2-d.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    .LG-slider2{
+        height: 500px;
+        margin-top: -320px;
+        background-image: url("../img/africa-tvaudiovideo-pdp-3-d.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+@media (max-width: 800px){
+    .speakers-section{margin-top: -150px;}
+    .LG-slider a{padding: 10px; position: relative; top: 30%; left: 60%;}
+    .LG-slider1{margin-top: -205px;}
+    .LG-slider1 h2{font-size: 30px; position: relative; top: 10%; left: 60%;}   
+    .LG-slider1 a{padding: 10px; position: relative; top: 18%; left: 60%;}
+    .LG-slider2{margin-top: -400px;}
+    .LG-slider2 h2{
+        position: relative;
+        top: 25%;
+    }
+    .LG-slider2 a{
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+        top: 35%;
+    }
+    .soundbars-section{margin-top: -150px;}
+    
+}
+
+@media (max-width: 425px){
+    .tv-section1 p{font-size: 0.8rem;}
+    .tv-slider h1{font-size: 25px; position: relative; top: 12%; left: 58%;}
+    .tv-slider a{font-size: 0.55rem; padding: 8px; border-radius: 8px; position: relative; top: 16%; left: 58%;}
+    .speakers-section{margin-top: -300px;}
+    .patners-section2{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 30px;
+        margin: auto;
+    }
+    .LG-slider a{font-size: 12px; padding: 10px; position: relative; top: 15%; left: 60%;}
+
+    .LG-slider1{margin-top: -342px;}
+    .LG-slider1 h2{
+        font-size: 18px;
+        position: relative;
+        top: 5%;
+        left: 60%;
+    }
+    .LG-slider1 a{
+        font-size: 12px;
+        padding: 10px;
+        position: relative;
+        top: 7%;
+        left: 60%;
+    }
+    .LG-slider2{margin-top: -550px;}
+    .LG-slider2 h2{font-size: 24px; position: relative; top: 5%;}
+    .LG-slider2 a{font-size: 12px; padding: 10px; position: relative; top: 10%;}
+    .soundbars-section{margin-top: -250px;}
+    .soundbars-section .col1 .img1{
+        background-image: url("../img/bluntspeaker.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .soundbars-section .col1 .img2{
+        margin-top: -120px;
+        background-image: url("../img/bluntbluetooth.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .soundbars-section .col1{width: 48%;}
+    .soundbars-section .col1 .img1,.img2{height: 300px;}
+    .soundbars-section .col2{width: 45%; height: 386px; background-image: url("../img/bluntmifi.webp");
+        background-size: cover; background-repeat: no-repeat;
+       
+    }
+    .soundbars-section .col1 h2{ font-size: 24px; color: white; padding: 40px;
+    }
+    .footer-section{margin-top: -200px; }
+    
+}
+
+/* MEDIA QUERIES FOR HOME APPLIANCES */
+@media (max-width: 1050px){
+    .home-slider{
+        /* width: 100%;
+        height: 500px; */
+        margin-top: 40px;
+        background-image: url("../img/africa-homeappliances-hero-1-d.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .home-slider .home-para{
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 35%;
+    left: 59%;
+}
+.home-appliance-hero .appliance-para{font-size: 14px;}
+.home-appliance-hero1 h1{font-size: 40px;}
+}
+
+@media (max-width: 800px){
+    .home-slider h1{font-size: 25px; position: relative; top: 20%; left: 59%;}
+    .home-slider .home-para{font-size: 12px; position: relative; top: 25%; left: 59%;}
+    .home-slider a{font-size: 14px; padding: 8px; position: relative; top: 30%; left: 59%;}
+    .home-appliance-item{margin-top: -150px;}
+    .home-appliance-hero h1{font-size: 40px; color: blueviolet; position: relative; top: 10%; left: 50%;}
+    .home-appliance-hero .appliance-para{display: none;}
+    .home-appliance-hero a{position: relative; top: 20%; left: 50%;}
+    .home-appliance-hero1 h1{font-size: 2.5rem; position: relative; top: 30%; left: 50%;}
+    
+    .home-appliance-hero1 a{position: relative; top: 35%; left: 57%;}
+}
+
+@media (max-width: 425px){
+    .home-appliances p{font-size: 0.7rem;}
+    br{display: none;}
+    .home-slider h1{font-size: 15px; position: relative; top: 10%; left: 55%;}
+    .home-slider .home-para{font-size: 10px; position: relative; top: 12%; left: 40%;}
+    .home-slider a{font-size: 12px; padding: 5px; position: relative; top: 15%; left: 59%;}
+    .home-appliance-item{margin-top: -250px;}
+    .home-appliance-hero{
+        background-image: url("../img/africa-homeappliances-supercategory.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .home-appliance-hero h1{font-size: 16px; color: blueviolet; position: relative; top: 10%; left: 20%;}
+    .home-appliance-hero a{font-size: 12px; padding: 6px; border-radius: 5px; position: relative; top: 15%; left: 40%;
+    }
+    .home-appliance-hero1{
+        margin-top: -627px;
+        background-image: url("../img/africa-homeappliances-supercategory-6\(1\).jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .home-appliance-hero1 h1{font-size: 16px; color: white; position: relative; top: 10%; left: 20%;}
+    .home-appliance-hero1 a{ font-size: 14px; padding: 5px; position: relative; top: 15%; left: 40%;}
+    .footer-section{margin-top: -640px;}
+    .footer-section1{display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 30px;}
+}

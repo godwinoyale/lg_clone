@@ -790,11 +790,12 @@ html,body{
     .most-popular{display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 30px; width: 80%;
      margin-left: 100px; margin-top: 30px;}
 
-     .section4 .col1{width: 38%; height: 438px; background-image: url("../img/africa-home-block-1-t.webp"); background-size: contain; background-repeat: no-repeat;}
+    .section4 .col1{width: 38%; height: 438px; background-image: url("../img/africa-home-block-1-t.webp"); background-size: contain; background-repeat: no-repeat;}
     .section4 .col2{ width: 54%;}
     .section4 .col2 .img1{ background-image: url("../img/africa-home-block-2-d.webp"); background-size:contain; background-repeat: no-repeat;}
     .section4 .col2 .img2{ background-image: url("../img/africa-home-block-3-d.webp"); background-size: contain; background-repeat: no-repeat; margin-top: -250px;}
     .section4  h2{font-size: 14px;}
+    .section5{margin-top: -100px !important;}
     .section5 .col1 img{
         width: 100px;
     }
@@ -811,6 +812,7 @@ html,body{
     .section7 .col1 p{
         margin-left: -3px;
     }
+    .home-page{margin-top: 100px !important;} 
     
 
 }
@@ -895,7 +897,7 @@ html,body{
     .LG-slider2{margin-top: -550px;}
     .LG-slider2 h2{font-size: 24px; position: relative; top: 5%;}
     .LG-slider2 a{font-size: 12px; padding: 10px; position: relative; top: 10%;}
-    .soundbars-section{margin-top: -250px;}
+    .soundbars-section{margin-top: -250px; margin-bottom: 600px!important;}
     .soundbars-section .col1 .img1{
         background-image: url("../img/bluntspeaker.webp");
         background-size: contain;
@@ -915,7 +917,7 @@ html,body{
     }
     .soundbars-section .col1 h2{ font-size: 24px; color: white; padding: 40px;
     }
-    .footer-section{margin-top: -200px; }
+
     
 }
 
@@ -954,6 +956,7 @@ html,body{
 }
 
 @media (max-width: 425px){
+    body{overflow-y: hidden;}
     .home-appliances p{font-size: 0.7rem;}
     br{display: none;}
     .home-slider h1{font-size: 15px; position: relative; top: 10%; left: 55%;}
